@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clover Studio | Indie Game Studio – Creators of ORIKA</title>
+  <meta name="description" content="Clover Studio is an indie game studio working on ORIKA: Rise From The Crash, a 3D platformer on Steam. Game art outsourcing, graphic design, product design and architectural visualization.">
+  <meta name="theme-color" content="#1c1a21">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://example.com/">
+
+  <!-- Social / SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Clover Studio | Indie Game Studio – Creators of ORIKA">
+  <meta property="og:description" content="Indie game studio behind ORIKA: Rise From The Crash. Wishlist it on Steam.">
+  <meta property="og:image" content="./assets/images/orika-gameplay.webp">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23eba800'/%3E%3Cg fill='%231c1a21'%3E%3Ccircle cx='11' cy='11' r='5'/%3E%3Ccircle cx='21' cy='11' r='5'/%3E%3Ccircle cx='11' cy='21' r='5'/%3E%3Ccircle cx='21' cy='21' r='5'/%3E%3C/g%3E%3C/svg%3E">
+
+  <link rel="preload" as="image" href="./assets/images/hero-bg.webp" fetchpriority="high">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Clover Studio",
+    "description": "Indie game studio creating ORIKA: Rise From The Crash.",
+    "sameAs": [
+      "https://www.linkedin.com/company/clover-studio-games/",
+      "https://x.com/zakarya_channar",
+      "https://www.facebook.com/share/NTKya8o6KfQqw31S/"
+    ]
+  }
+  </script>
+</head>
+
+<body id="top">
+
+  <!-- SVG icon sprite -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true" focusable="false">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7.5"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7M12 19V5"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></symbol>
+    <symbol id="i-gamepad" viewBox="0 0 24 24"><path d="M6 11h4M8 9v4M15 12h.01M18 10h.01"/><path d="M17.3 5H6.7a4 4 0 0 0-4 3.6C2.6 9.4 2 14.5 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.4-1.4a2 2 0 0 1 1.4-.6h4.4a2 2 0 0 1 1.4.6L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.5-.6-6.6-.7-7.3A4 4 0 0 0 17.3 5Z"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2M10 6h4M10 10h4M10 14h4M10 18h4"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="m12 19 7-7 3 3-7 7-3-3Z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5Z"/><path d="m2 2 7.6 7.6"/><circle cx="11" cy="11" r="2"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.7Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7l10-5Z"/><path d="m2 12 10 5 10-5M2 17l10 5 10-5"/></symbol>
+    <symbol id="i-waves" viewBox="0 0 24 24"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.500 5c2.600 0 2.400 2 5 2 2.500 0 2.500-2 5-2 1.300 0 1.900.5 2.500 1M2 12c.6.5 1.200 1 2.500 1 2.500 0 2.500-2 5-2 2.600 0 2.400 2 5 2 2.500 0 2.500-2 5-2 1.300 0 1.900.5 2.500 1M2 18c.6.5 1.200 1 2.500 1 2.500 0 2.500-2 5-2 2.600 0 2.400 2 5 2 2.500 0 2.500-2 5-2 1.300 0 1.900.5 2.500 1"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.4c.9.300 1.800.6 2.800.7a2 2 0 0 1 1.700 2Z"/></symbol>
+    <symbol id="i-clover" viewBox="0 0 24 24"><circle cx="8.500" cy="8.500" r="4.500"/><circle cx="15.500" cy="8.500" r="4.500"/><circle cx="8.500" cy="15.500" r="4.500"/><circle cx="15.500" cy="15.500" r="4.500"/></symbol>
+    <!-- brand glyphs (filled) -->
+    <symbol id="b-linkedin" viewBox="0 0 30 30"><path d="M9 25H4V10h5v15zM6.5 8C5.1 8 4 6.900 4 5.500S5.100 3 6.500 3C7.900 3 9 4.100 9 5.500S7.900 8 6.500 8zM27 25h-4.800v-7.300c0-1.700 0-4-2.500-4-2.500 0-2.900 1.900-2.900 3.900V25H12V10h4.600v2.100h.1c.6-1.200 2.200-2.400 4.600-2.400 4.900 0 5.800 3.100 5.800 7.200V25z"/></symbol>
+    <symbol id="b-x" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></symbol>
+    <symbol id="b-facebook" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.990 4.388 10.954 10.125 11.854v-8.385H7.078v-3.470h3.047V9.430c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.830c-1.491 0-1.956.925-1.956 1.874v2.250h3.328l-.532 3.470h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></symbol>
+    <symbol id="b-steam" viewBox="0 0 24 24"><path d="M11.979 0C5.678 0 .511 4.860.022 11.037l6.432 2.658a3.387 3.387 0 0 1 1.912-.588c.063 0 .125.004.188.006l2.861-4.142V8.910c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.030 4.524-4.527 4.524h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.390 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.270C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.540 18.210l-1.473-.610c.262.543.714.999 1.314 1.250 1.297.539 2.793-.076 3.332-1.375.263-.630.264-1.319.005-1.949s-.750-1.121-1.377-1.383c-.624-.260-1.290-.249-1.878-.030l1.523.630c.956.400 1.409 1.500 1.009 2.455-.397.957-1.497 1.410-2.454 1.012H7.540zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.350 3.015 3.015 3.015 1.663 0 3.015-1.350 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></symbol>
+  </svg>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Top bar (desktop) -->
+  <div class="header-top">
+    <div class="container">
+      <div class="social-wrapper">
+        <p class="social-title">Follow us on :</p>
+        <ul class="social-list">
+          <li>
+            <a href="https://www.facebook.com/share/NTKya8o6KfQqw31S/?mibextid=qi2Omg" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Clover Studio on Facebook">
+              <svg class="icon icon-fill" aria-hidden="true"><use href="#b-facebook"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/zakarya_channar?lang=en" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Clover Studio on X">
+              <svg class="icon icon-fill" aria-hidden="true"><use href="#b-x"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/clover-studio-games/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Clover Studio on LinkedIn">
+              <svg class="icon icon-fill" aria-hidden="true"><use href="#b-linkedin"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" data-header>
+    <div class="container header-inner">
+
+      <a href="#top" class="logo" aria-label="Clover Studio – back to top">
+        <svg class="icon logo-icon" aria-hidden="true"><use href="#i-clover"/></svg>
+        <span>CLOVER STUDIO</span>
+      </a>
+
+      <nav class="navbar" id="primary-nav" aria-label="Primary" data-navbar>
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="#home" class="navbar-link" data-nav-link>Home</a></li>
+          <li class="navbar-item"><a href="#services" class="navbar-link" data-nav-link>Services</a></li>
+          <li class="navbar-item"><a href="#game" class="navbar-link" data-nav-link>Our Game</a></li>
+          <li class="navbar-item"><a href="#contact" class="navbar-link" data-nav-link>Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-btn" type="button" aria-label="Open search" aria-haspopup="dialog" data-search-open>
+          <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+        </button>
+
+        <button class="nav-toggle-btn" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav" data-nav-toggler>
+          <svg class="icon menu" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon close" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Search overlay -->
+  <div class="search-container" role="dialog" aria-modal="true" aria-label="Search the site" data-search-box>
+    <form class="input-wrapper" role="search" data-search-form>
+      <input type="search" name="search" aria-label="Search" placeholder="Search services, ORIKA…" class="search-field" autocomplete="off" data-search-input>
+      <button class="search-submit" type="submit" aria-label="Submit search">
+        <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+      </button>
+      <p class="search-hint" data-search-hint role="status" aria-live="polite">Press Esc to close</p>
+    </form>
+    <button class="search-close" type="button" aria-label="Close search" tabindex="-1" data-search-close></button>
+  </div>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="section hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-bg" src="./assets/images/hero-bg.webp" alt="" width="1920" height="781" fetchpriority="high" decoding="async" data-parallax>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container">
+
+        <div class="hero-content">
+          <p class="hero-subtitle anim-in" style="--d:0">World Gaming</p>
+
+          <h1 class="h1 hero-title anim-in" id="hero-title" style="--d:1">
+            Create <span class="span">Manage</span> Matches
+          </h1>
+
+          <p class="hero-text anim-in" style="--d:2">
+            Clover Studio is an indie game design studio. We are working on our first
+            game, ORIKA, and on the Terascan platform.
+          </p>
+
+          <div class="hero-cta anim-in" style="--d:3">
+            <a href="https://store.steampowered.com/app/2950680/ORIKA__Rise_From_The_Crash/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <svg class="icon icon-fill" aria-hidden="true"><use href="#b-steam"/></svg>
+              Wishlist on Steam
+            </a>
+            <a href="#services" class="btn btn-ghost">
+              Our services
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <figure class="hero-banner anim-in" style="--d:2">
+          <div class="hero-glow" aria-hidden="true"></div>
+          <img src="./assets/images/character.webp" width="900" height="922" alt="ORIKA, the orange clean-up robot" class="hero-robot" fetchpriority="high" decoding="async">
+        </figure>
+
+      </div>
+
+      <a href="#services" class="scroll-cue" aria-label="Scroll to services">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+
+        <h2 class="h2 section-title reveal" id="services-title">
+          Boost Your <span class="span">Hypercasual Game</span>
+        </h2>
+
+        <p class="section-text reveal" style="--d:1">
+          Clover Studio provides a range of creative services for game teams and brands.
+        </p>
+
+        <ul class="has-scrollbar">
+
+          <li class="scrollbar-item reveal" style="--d:0">
+            <article class="one-card">
+              <figure class="card-banner">
+                <img src="./assets/images/fish-monster.webp" width="640" height="522" loading="lazy" decoding="async" alt="3D rendered green fish monster" class="img-cover">
+              </figure>
+              <div class="card-content">
+                <span class="card-badge" aria-hidden="true"><svg class="icon"><use href="#i-building"/></svg></span>
+                <h3 class="h3"><a href="#contact" class="card-title">Architectural Visualization</a></h3>
+                <p class="card-desc">Photoreal 3D renders and walkthroughs of spaces before they exist.</p>
+              </div>
+            </article>
+          </li>
+
+          <li class="scrollbar-item reveal" style="--d:1">
+            <article class="one-card">
+              <figure class="card-banner">
+                <img src="./assets/images/fish-monster.webp" width="640" height="522" loading="lazy" decoding="async" alt="3D rendered green fish monster" class="img-cover">
+              </figure>
+              <div class="card-content">
+                <span class="card-badge" aria-hidden="true"><svg class="icon"><use href="#i-pen"/></svg></span>
+                <h3 class="h3"><a href="#contact" class="card-title">Graphic Design</a></h3>
+                <p class="card-desc">Branding, key art and marketing visuals with a playful edge.</p>
+              </div>
+            </article>
+          </li>
+
+          <li class="scrollbar-item reveal" style="--d:2">
+            <article class="one-card">
+              <figure class="card-banner">
+                <img src="./assets/images/fish-monster.webp" width="640" height="522" loading="lazy" decoding="async" alt="3D rendered green fish monster" class="img-cover">
+              </figure>
+              <div class="card-content">
+                <span class="card-badge" aria-hidden="true"><svg class="icon"><use href="#i-gamepad"/></svg></span>
+                <h3 class="h3"><a href="#contact" class="card-title">Game Art Outsourcing</a></h3>
+                <p class="card-desc">Characters, environments and props, ready for your engine.</p>
+              </div>
+            </article>
+          </li>
+
+          <li class="scrollbar-item reveal" style="--d:3">
+            <article class="one-card">
+              <figure class="card-banner">
+                <img src="./assets/images/fish-monster.webp" width="640" height="522" loading="lazy" decoding="async" alt="3D rendered green fish monster" class="img-cover">
+              </figure>
+              <div class="card-content">
+                <span class="card-badge" aria-hidden="true"><svg class="icon"><use href="#i-box"/></svg></span>
+                <h3 class="h3"><a href="#contact" class="card-title">Product Design</a></h3>
+                <p class="card-desc">Concept to 3D prototype for physical and digital products.</p>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- GAME -->
+    <section class="section blog" id="game" aria-labelledby="game-title">
+      <div class="container">
+
+        <h2 class="h2 section-title reveal" id="game-title">
+          <span class="span">ORIKA</span> Rise From The Crash
+        </h2>
+
+        <p class="section-text reveal" style="--d:1">
+          Help this adorable robot
+          <svg class="icon inline-icon" aria-hidden="true"><use href="#i-bot"/></svg>
+          clean polluted waters and overcome obstacles in our upcoming 3D platformer!
+          Wishlist ORIKA on Steam now and join the clean-up crew!
+        </p>
+
+        <ul class="blog-list">
+
+          <li class="reveal" style="--d:0">
+            <article class="blog-card">
+              <figure class="card-banner">
+                <img src="./assets/images/orika-gameplay.webp" width="960" height="540" loading="lazy" decoding="async" alt="ORIKA gameplay: a boat cruising through polluted waters" class="img-cover">
+              </figure>
+              <div class="card-content">
+                <span class="card-icon" aria-hidden="true"><svg class="icon"><use href="#i-waves"/></svg></span>
+                <h3 class="card-title">Navigate polluted waters</h3>
+                <p class="card-text">Steer through murky currents and clear the debris along the way.</p>
+              </div>
+            </article>
+          </li>
+
+          <li class="reveal" style="--d:1">
+            <article class="blog-card">
+              <figure class="card-banner">
+                <img src="./assets/images/orika-gameplay.webp" width="960" height="540" loading="lazy" decoding="async" alt="ORIKA gameplay: obstacles floating on the water" class="img-cover">
+              </figure>
+              <div class="card-content">
+                <span class="card-icon" aria-hidden="true"><svg class="icon"><use href="#i-gamepad"/></svg></span>
+                <h3 class="card-title">Dodge tricky obstacles</h3>
+                <p class="card-text">Quick reflexes and smart routes keep your robot in one piece.</p>
+              </div>
+            </article>
+          </li>
+
+          <li class="reveal" style="--d:2">
+            <article class="blog-card">
+              <figure class="card-banner">
+                <img src="./assets/images/orika-gameplay.webp" width="960" height="540" loading="lazy" decoding="async" alt="ORIKA gameplay: the world after the crash" class="img-cover">
+              </figure>
+              <div class="card-content">
+                <span class="card-icon" aria-hidden="true"><svg class="icon"><use href="#i-book"/></svg></span>
+                <h3 class="card-title">Story-rich game</h3>
+                <p class="card-text">Uncover what happened and why the waters need saving.</p>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+
+        <div class="game-cta reveal">
+          <a href="https://store.steampowered.com/app/2950680/ORIKA__Rise_From_The_Crash/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-fill" aria-hidden="true"><use href="#b-steam"/></svg>
+            Wishlist ORIKA on Steam
+            <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div class="pg-footer" id="contact">
+    <footer class="footer">
+      <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.900,11-2.900C80.700,22,151.700,10.800,223.500,6.300C276.700,2.900,330,4,383,9.800 c52.200,5.700,103.300,16.200,153.400,32.800C623.900,71.300,726.800,100,851.800,100z"></path>
+      </svg>
+
+      <div class="footer-content">
+
+        <div class="footer-content-column footer-brand">
+          <a class="footer-logo-link" href="#top">
+            <span class="footer-logo">Clover Studio</span>
+          </a>
+          <p class="footer-about">Clover Studio aims to address game fatigue in the gaming industry by delivering fresh and engaging experiences.</p>
+        </div>
+
+        <nav class="footer-content-column" aria-label="Contact links">
+          <h2 class="footer-menu-name">Contact</h2>
+          <ul class="footer-menu-list">
+            <li><a href="https://www.linkedin.com/company/clover-studio-games/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://store.steampowered.com/app/2950680/ORIKA__Rise_From_The_Crash/" target="_blank" rel="noopener noreferrer">ORIKA on Steam</a></li>
+            <li><a href="https://x.com/zakarya_channar?lang=en" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-content-column" aria-label="Quick links">
+          <h2 class="footer-menu-name">Quick Links</h2>
+          <ul class="footer-menu-list">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#game">Our Game</a></li>
+            <li><a href="https://gamefaqs.gamespot.com/pc/464145-orika-rise-from-the-crash/data" target="_blank" rel="noopener noreferrer">More Info</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-content-column">
+          <h2 class="footer-menu-name">Let's Chat</h2>
+          <p class="footer-call-to-action-description">Have a project or a support question?</p>
+          <a class="footer-call-to-action-button" href="https://www.linkedin.com/company/clover-studio-games/" target="_blank" rel="noopener noreferrer">Get in Touch</a>
+
+          <h2 class="footer-menu-name footer-call-title">You Call Us</h2>
+          <p class="footer-call-to-action-link-wrapper">
+            <a class="footer-call-to-action-link" href="tel:+2126XXXXXXX">
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+              +2126-64XXXX
+            </a>
+          </p>
+        </div>
+
+        <div class="footer-social-links">
+          <svg class="footer-social-amoeba-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 54" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path class="footer-social-amoeba-path" d="M223.06,43.32c-.77-7.2,1.87-28.47-20-32.53C187.78,8,180.41,18,178.32,20.7s-5.63,10.1-4.07,16.7-.13,15.23-4.06,15.91-8.75-2.9-6.89-7S167.41,36,167.15,33a18.93,18.93,0,0,0-2.64-8.53c-3.44-5.5-8-11.19-19.12-11.19a21.64,21.64,0,0,0-18.31,9.18c-2.08,2.7-5.66,9.6-4.07,16.69s.64,14.32-6.11,13.9S108.35,46.5,112,36.54s-1.89-21.24-4-23.94S96.34,0,85.23,0,57.46,8.84,56.49,24.56s6.92,20.79,7,24.59c.07,2.75-6.43,4.16-12.92,2.38s-4-10.75-3.46-12.38c1.85-6.6-2-14-4.08-16.69a21.62,21.62,0,0,0-18.3-9.18C13.62,13.28,9.06,19,5.62,24.47A18.81,18.81,0,0,0,3,33a21.85,21.85,0,0,0,1.58,9.08,16.58,16.58,0,0,1,1.06,5A6.75,6.75,0,0,1,0,54H236C235.47,54,223.83,50.52,223.06,43.32Z"/>
+          </svg>
+          <div class="footer-social-icons">
+            <a class="footer-social-link" href="https://www.linkedin.com/company/clover-studio-games/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg class="icon icon-fill" aria-hidden="true"><use href="#b-linkedin"/></svg>
+            </a>
+            <a class="footer-social-link" href="https://x.com/zakarya_channar?lang=en" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <svg class="icon icon-fill" aria-hidden="true"><use href="#b-x"/></svg>
+            </a>
+            <a class="footer-social-link" href="https://www.facebook.com/share/NTKya8o6KfQqw31S/?mibextid=qi2Omg" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg class="icon icon-fill" aria-hidden="true"><use href="#b-facebook"/></svg>
+            </a>
+            <a class="footer-social-link" href="https://store.steampowered.com/app/2950680/ORIKA__Rise_From_The_Crash/" target="_blank" rel="noopener noreferrer" aria-label="ORIKA on Steam">
+              <svg class="icon icon-fill" aria-hidden="true"><use href="#b-steam"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-copyright">
+        <div class="footer-copyright-wrapper">
+          <p class="footer-copyright-text">© <span data-year>2026</span> Clover Studio. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+  </a>
+
+  <script src="./assets/js/script.js" defer></script>
+</body>
+
+</html>
